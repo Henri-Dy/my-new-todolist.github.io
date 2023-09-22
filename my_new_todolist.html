@@ -24,20 +24,20 @@
     
     <section class="flex justify-start items-start ">
         <div class="flex flex-row sm:flex-col  justify-start items-center sm:w-full  border border-[#ffd500] rounded-lg ">
-            <div class="p-2 hover:scale-50 duration-500 text-[#ffd500] text-2xl font-bold">
+            <div class="p-2 hover:scale-150 duration-500 text-[#ffd500] text-2xl font-bold">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div> 
-            <div class="p-2 hover:scale-50 duration-500">
+            <div class="p-2 hover:scale-150 duration-500">
                 <i class="fa-solid fa-plus text-[#ffd500] text-2xl font-bold"></i>
             </div> 
             
-            <div class="p-2 hover:scale-50 duration-500">
+            <div class="p-2 hover:scale-150 duration-500">
                 <i class="fa-solid fa-plus text-[#ffd500] text-2xl font-bold"></i>
             </div> 
-            <div class="p-2 hover:scale-50 duration-500">
+            <div class="p-2 hover:scale-150 duration-500">
                 <i class="fa-solid fa-plus text-[#ffd500] text-2xl font-bold"></i>
             </div> 
-            <div class="p-2 hover:scale-50 duration-500">
+            <div class="p-2 hover:scale-150 duration-500">
                 <i class="fa-solid fa-plus text-[#ffd500] text-2xl font-bold"></i>
             </div> 
            
@@ -51,9 +51,15 @@
         <form action="#" class="flex flex-col "> 
             <div class="flex flex-row justify-between items-center mb-2">
                 <p class="text-[#ffd500]">My todolist  </p>
-                <div class="flex flex-row items-center gap-2 ">
+                <div class="flex flex-row items-center gap-2 settings-hover">
                     <p>Paramètres</p>
-                    <i class="fa-solid fa-gear hover:rotate-180 duration-500" style="color: #ffd500;"></i>
+                    <i class="fa-solid fa-gear  duration-500 settings-spinner" style="color: #ffd500;"></i>
+
+                    <script>
+                        $('.settings-hover').hover(function(){
+                            $('.settings-spinner').addClass('hover:rotate-180');
+                        });
+                    </script>
                 </div>
             </div>
             <hr style="color: #ffd500;">
